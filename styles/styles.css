@@ -1,0 +1,706 @@
+body {
+    margin: 0;
+    font-family: Century Gothic, serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+h2 {
+    font-family: Geometos, sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    color: black;
+}
+
+h3 {
+    font-family: Flamante Cairo, serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+h4 {
+    font-family: Coyote SemiBold DEMO, sans-serif;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+}
+
+b {
+    color: black;
+}
+
+strong {
+    color: black;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 2px solid #333333;
+    width: 88%;
+    z-index: 1;
+}
+
+ul.topnav li {
+    float: right;
+    font-family: Gauge Heavy, sans-serif;
+    font-size: 13px;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 10px 19px 1px 14px;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+    letter-spacing: 3px;
+}
+
+ul.topnav li a:hover:not(.active) {
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    color: #333;
+}
+
+ul.topnav li a.active {
+    color: cornflowerblue;
+}
+
+ul.topnav li.left {
+    float: left;
+    font-family: Dry Brush;
+    font-size: 18px;
+    padding-left: 20px;
+    color: aquamarine;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+    
+    
+  
+/* Code for 2 column section that floats next to each other */
+.column {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnRules {
+    float: left;
+    text-align: left;
+    width: 40%;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.advoc1 .row p {
+    font-style: oblique;
+    font-size: 14px;
+    font-family: Eligible;
+}
+
+.rowRules:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+    
+.subBody{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+}
+ 
+section.motto {
+	background:#fff;
+	width:60%;
+	margin:auto;
+	padding:0px;
+}
+
+blockquote {
+	text-align:center;
+	font-size:17px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position:relative;
+	quotes: "\201C""\201D""\2018""\2019";
+    
+}
+
+blockquote:after {
+	color:#ccc;
+	font-family: Source Sans Pro;
+	content: open-quote;
+	font-size:80px;
+	position:absolute;
+	left:50%;
+	bottom:calc(100% - 20px);
+	background:#fff;
+	height:55px;
+	width: 55px;
+	line-height:normal;
+	text-align:center;
+	transform:translateX(-50%);
+}
+
+blockquote p {
+	padding:20px;
+    font-family: Amazing Kids;
+    letter-spacing: 2px;
+}
+
+.rules img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.rules img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    -webkit-animation: shadow-pop-bl 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bl 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    
+}
+
+@-webkit-keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px #808080, -2px 2px #808080, -3px 3px #808080, -4px 4px #808080, -5px 5px #808080, -6px 6px #808080, -7px 7px #808080, -8px 8px #808080;
+    -webkit-transform: translateX(8px) translateY(-8px);
+            transform: translateX(8px) translateY(-8px);
+  }
+}
+
+@keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080, 0 0 #808080;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px #808080, -2px 2px #808080, -3px 3px #808080, -4px 4px #808080, -5px 5px #808080, -6px 6px #808080, -7px 7px #808080, -8px 8px #808080;
+    -webkit-transform: translateX(8px) translateY(-8px);
+            transform: translateX(8px) translateY(-8px);
+  }
+}
+
+.news img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.news img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    -webkit-animation: shadow-pop-bl 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bl 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+hr.style { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}    
+
+/* For the image silder */
+#slider {
+  text-align: center;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+input {
+  display: none;
+}
+
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+
+#slide5:checked ~ #slides .inner {
+  margin-left: -400%;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageholder img {
+  width: 100%;
+    height: 60%;
+}
+
+#slides .inner {
+  width: 500%;
+  line-height: 0;
+}
+
+#slides .imageholder {
+  width: 20%;
+  float: left;
+}
+
+#commands {
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 100px;
+}
+
+#commands label {
+  display: none;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+}
+
+#commands label:hover {
+  opacity: 0.8;
+}
+
+#active {
+  position: relative;
+  z-index: 5;
+  margin: 16% 0 0;
+  text-align: center;
+}
+
+#active label {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+}
+
+#active label:hover {
+  background: #333;
+  border-color: #777 !important;
+}
+
+#slide1:checked ~ #commands label:nth-child(2),
+#slide2:checked ~ #commands label:nth-child(3),
+#slide3:checked ~ #commands label:nth-child(4),
+#slide4:checked ~ #commands label:nth-child(5),
+#slide5:checked ~ #commands label:nth-child(1) {
+  background: src="next.png"
+    no-repeat;
+  float: right;
+  margin: 0 12px 0 0;
+  display: block;
+}
+
+#slide1:checked ~ #commands label:nth-child(5),
+#slide2:checked ~ #commands label:nth-child(1),
+#slide3:checked ~ #commands label:nth-child(2),
+#slide4:checked ~ #commands label:nth-child(3),
+#slide5:checked ~ #commands label:nth-child(4) {
+  background: src="previous.png"
+    no-repeat;
+  float: left;
+  margin: 0 0 0 -6px;
+  display: block;
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) {
+  background: #000;
+  opacity: 0.6;
+  border-color: #fff !important;
+  border: 2px solid #fff;
+}
+
+#slides {
+  position: relative;
+  padding: 2px;
+  border: 1px solid #ddd;
+  margin: 45px 0 0;
+  background: #fff;
+  background: -webkit-linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
+  background: -moz-linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
+  background: -ms-linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
+  background: -o-linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
+  background: linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+#slides .inner {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#slider {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#commands label {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+#slide1:checked ~ #slides .imageholder:nth-child(1) .caption,
+#slide2:checked ~ #slides .imageholder:nth-child(2) .caption,
+#slide3:checked ~ #slides .imageholder:nth-child(3) .caption,
+#slide4:checked ~ #slides .imageholder:nth-child(4) .caption,
+#slide5:checked ~ #slides .imageholder:nth-child(5) .caption {
+  opacity: 1;
+  -webkit-transition: all 1s ease-out 0.6s;
+  -moz-transition: all 1s ease-out 0.6s;
+  -o-transition: all 1s ease-out 0.6s;
+  transition: all 1s ease-out 0.6s;
+}
+
+#commands,
+#commands label,
+#slides,
+#active,
+#active label {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#slider {
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  #slider #commands {
+    margin: -25% 0 0 5%;
+    width: 90%;
+    height: 50px;
+  }
+  #slider #commands label {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  #slider #slides .caption {
+    padding: 280px 12px;
+  }
+  #slider #slides {
+    padding: 2px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  #slider #active {
+    margin: 15% 0 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #slider #commands {
+    margin: -28% 0 0 1%;
+    width: 100%;
+    height: 70px;
+  }
+  #slider #active {
+    margin: 12% 0 0;
+  }
+  #slider #slides {
+    padding: 2px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  #slider #slides .caption {
+    opacity: 0 !important;
+  }
+  #slider #commands label {
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  body {
+    padding: 0 80px;
+  }
+}
+
+.adv1-footer {
+    text-align: center;
+    margin-top: 3%;
+    background-color: #eafafa;
+    height: 17em;
+    padding-top: 1px;
+    color: #142a52;
+    font-size: 12px;
+}
+
+/* codes for all the fonts used in this website */
+/* This stylesheet generated by Transfonter (https://transfonter.org) on February 11, 2018 9:15 AM */
+
+@font-face {
+    font-family: Eligible;
+    src: url(./fonts/hinted-Eligible-Regular.woff2) format(woff2),
+        url(./fonts/hinted-Eligible-Regular.woff) format(woff),
+        url(./fonts/hinted-Eligible-Regular.ttf) format(truetype);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Flamante Cairo;
+    src: url(./fonts/hinted-FlamanteCairo.woff2) format(woff2),
+        url(./fonts/hinted-FlamanteCairo.woff) format(woff),
+        url(./fonts/hinted-FlamanteCairo.ttf) format(truetype);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Eligible;
+    src: url(./fonts/hinted-Eligible-Bold-Italic.woff2) format(woff2),
+        url(./fonts/hinted-Eligible-Bold-Italic.woff) format(woff),
+        url(./fonts/hinted-Eligible-Bold-Italic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Eligible;
+    src: url(./fonts/hinted-Eligible-Bold.woff2) format(woff2),
+        url(./fonts/hinted-Eligible-Bold.woff) format(woff),
+        url(./fonts/hinted-Eligible-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Dry Brush;
+    src: url(./fonts/hinted-DryBrush.woff2) format(woff2),
+        url(./fonts/hinted-DryBrush.woff) format(woff),
+        url(./fonts/hinted-DryBrush.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gauge;
+    src: url(./fonts/hinted-Gauge-Oblique.woff2) format(woff2),
+        url(./fonts/hinted-Gauge-Oblique.woff) format(woff),
+        url(./fonts/hinted-Gauge-Oblique.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Eligible;
+    src: url(./fonts/hinted-Eligible-Italic.woff2) format(woff2),
+        url(./fonts/hinted-Eligible-Italic.woff) format(woff),
+        url(./fonts/hinted-Eligible-Italic.ttf) format(truetype);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Gauge;
+    src: url(./fonts/hinted-Gauge-Heavy.woff2) format(woff2),
+        url(./fonts/hinted-Gauge-Heavy.woff) format(woff),
+        url(./fonts/hinted-Gauge-Heavy.ttf) format(truetype);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(./fonts/hinted-CenturyGothic-BoldItalic.woff2) format(woff2),
+        url(./fonts/hinted-CenturyGothic-BoldItalic.woff) format(woff),
+        url(./fonts/hinted-CenturyGothic-BoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Flamante Cairo;
+    src: url(./fonts/hinted-FlamanteCairoBold.woff2) format(woff2),
+        url(./fonts/hinted-FlamanteCairoBold.woff) format(woff),
+        url(./fonts/hinted-FlamanteCairoBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Coyote SemiBold DEMO;
+    src: url(./fonts/hinted-Coyote-SemiBoldDEMO.woff2) format(woff2),
+        url(./fonts/hinted-Coyote-SemiBoldDEMO.woff) format(woff),
+        url(./fonts/hinted-Coyote-SemiBoldDEMO.ttf) format(truetype);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(./fonts/hinted-CenturyGothic-Italic.woff2) format(woff2),
+        url(./fonts/hinted-CenturyGothic-Italic.woff) format(woff),
+        url(./fonts/hinted-CenturyGothic-Italic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Amazing Kids;
+    src: url(./fonts/hinted-AmazingKids.woff2) format(woff2),
+        url(./fonts/hinted-AmazingKids.woff) format(woff),
+        url(./fonts/hinted-AmazingKids.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(./fonts/hinted-CenturyGothic-Bold.woff2) format(woff2),
+        url(./fonts/hinted-CenturyGothic-Bold.woff) format(woff),
+        url(./fonts/hinted-CenturyGothic-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Flamante Cairo Book;
+    src: url(./fonts/hinted-FlamanteCairoBook.woff2) format(woff2),
+        url(./fonts/hinted-FlamanteCairoBook.woff) format(woff),
+        url(./fonts/hinted-FlamanteCairoBook.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(./fonts/hinted-CenturyGothic.woff2) format(woff2),
+        url(./fonts/hinted-CenturyGothic.woff) format(woff),
+        url(./fonts/hinted-CenturyGothic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Geometos;
+    src: url(./fonts/hinted-Geometos.woff2) format(woff2),
+        url(./fonts/hinted-Geometos.woff) format(woff),
+        url(./fonts/hinted-Geometos.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Coyote SemiBold DEMO;
+    src: url(./fonts/hinted-Coyote-SemiBoldDEMO.woff2) format(woff2),
+        url(./fonts/hinted-Coyote-SemiBoldDEMO.woff) format(woff),
+        url(./fonts/hinted-Coyote-SemiBoldDEMO.ttf) format(truetype);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gauge;
+    src: url(./fonts/hinted-Gauge-Heavy.woff2) format(woff2),
+        url(./fonts/hinted-Gauge-Heavy.woff) format(woff),
+        url(./fonts/hinted-Gauge-Heavy.ttf) format(truetype);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gauge;
+    src: url(./fonts/./fonts/hinted-Gauge-Regular.woff2) format(woff2),
+        url(./fonts/hinted-Gauge-Regular.woff) format(woff),
+        url(./fonts/hinted-Gauge-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gauge;
+    src: url(./fonts/hinted-Gauge-Oblique.woff2) format(woff2),
+        url(./fonts/hinted-Gauge-Oblique.woff) format(woff),
+        url(./fonts/hinted-Gauge-Oblique.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
